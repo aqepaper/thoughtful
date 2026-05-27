@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>浴佛浴自心：從真空生妙有｜開示文稿</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400&display=swap');
+
+  :root {
+    --ink: #1a1208;
+    --gold: #b8942a;
+    --parchment: #f5edd8;
+    --parchment-dark: #ede0c4;
+    --warm-grey: #6b5e4a;
+    --line: rgba(184,148,42,0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: 'Noto Serif TC', 'Noto Sans TC', serif;
+    line-height: 2.0;
+    font-size: 20px;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 32px, rgba(184,148,42,0.04) 32px, rgba(184,148,42,0.04) 33px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 48px 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── Header ── */
+  .header {
+    text-align: center;
+    padding: 48px 0 52px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 64px;
+    position: relative;
+  }
+
+  .header::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px auto 0;
+  }
+
+  .occasion-tag {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: var(--warm-grey);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .main-title {
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    color: var(--warm-grey);
+    font-weight: 300;
+    letter-spacing: 0.15em;
+  }
+
+  .meta-row {
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--warm-grey);
+    letter-spacing: 0.08em;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .meta-row span::before {
+    content: '◆ ';
+    color: var(--gold);
+    font-size: 9px;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 64px;
+  }
+
+  .section-number {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: 0.06em;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+
+  .section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+  }
+
+  /* ── Prose ── */
+  p {
+    margin-bottom: 26px;
+    text-align: justify;
+    font-weight: 300;
+    color: #2a200f;
+    font-size: 20px;
+  }
+
+  p.lead {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 2.1;
+  }
+
+  /* ── Pull quote ── */
+  .pull-quote {
+    border-left: 3px solid var(--gold);
+    padding: 14px 24px;
+    margin: 36px 0;
+  }
+
+  .pull-quote p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 0;
+    letter-spacing: 0.03em;
+  }
+
+  .term { font-weight: 700; color: var(--ink); }
+
+  /* ── Sub-heading (replaces cards/boxes) ── */
+  .sub-head {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 32px 0 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .sub-head-note {
+    font-weight: 300;
+    font-size: 17px;
+    color: var(--warm-grey);
+    margin-left: 8px;
+  }
+
+  /* ── Closing gatha ── */
+  .gatha-block {
+    text-align: center;
+    padding: 48px 24px;
+    margin-top: 56px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .gatha-text {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 2.4;
+    color: var(--ink);
+    letter-spacing: 0.06em;
+  }
+
+  .gatha-sub {
+    margin-top: 18px;
+    font-size: 15px;
+    color: var(--warm-grey);
+    letter-spacing: 0.12em;
+  }
+
+  /* ── Divider ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 48px 0;
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 0.5em;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  .footer-note {
+    margin-top: 64px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--warm-grey);
+    letter-spacing: 0.12em;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    line-height: 2;
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 40px 20px 80px; }
+    .section-title { font-size: 20px; }
+    .gatha-text { font-size: 18px; }
+    p, p.lead, .pull-quote p, .sub-head { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="occasion-tag">佛曆三〇五三年　夏安居・報恩藥師法會　浴佛節開示要點</div>
+    <h1 class="main-title">浴佛浴自心<br>從真空生妙有</h1>
+    <p class="sub-title">報恩・護國・大智慧的實踐指南</p>
+    <div class="meta-row">
+      <span>中台禪寺開山三十五週年</span>
+      <span>開山祖師圓寂十週年</span>
+      <span>點燃中樞燈・傳遞覺光</span>
+    </div>
+  </div>
+
+  <!-- 壹 -->
+  <div class="section">
+    <span class="section-number">壹</span>
+    <h2 class="section-title">跨越時空的殊勝因緣</h2>
+
+    <p class="lead">大家好。今天我們聚在一起，共同慶祝一個非常殊勝的日子。</p>
+
+    <p>這一次的夏安居與報恩藥師法會，匯聚了三個重要的歷史節點，正可謂是跨越時空的殊勝因緣。第一，今年是佛曆三〇五三年，我們在此慶祝本師釋迦牟尼佛的聖誕；第二，這是中台禪寺建立的第三十五個年頭；第三，我們敬愛的開山祖師圓寂已屆十週年，今天我們特別點燃中樞燈，讓那一道覺光繼續傳遞下去。</p>
+
+    <div class="pull-quote">
+      <p>三個節點，一個儀式，一個傳承——正法的燈火，就是這樣從一顆心傳到另一顆心，從一個時代延續到下一個時代。</p>
+    </div>
+
+    <p>或許有人會問：「法師，我聽說浴佛節是佛曆三〇五三年，但其他地方說是二五七〇年，到底哪個對？」這是一個很好的問題。漢傳佛教的算法，是從中國古籍所記載佛陀誕生的年份——即周昭王二十四年（西元前一〇二七年）——算起，至今恰為三〇五三年。南傳上座部佛教則從佛陀涅槃的西元前五四三年為基準，計算至今為二五六九或二五七〇年。兩種算法各有所本，但我們要記住：無論計算方法為何，浴佛的核心，始終在於「感恩佛陀正法住世」。數字只是方便施設，那顆感恩的心，才是真正的核心。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 貳 -->
+  <div class="section">
+    <span class="section-number">貳</span>
+    <h2 class="section-title">雙軌並進的夏安居修持</h2>
+
+    <p>今年夏安居，我們選定兩部經典同時修持，可以說是「雙軌並進」。這兩條軌道相輔相成，缺一不可。</p>
+
+    <div class="sub-head">《藥師經》<span class="sub-head-note">— 報恩與發願</span></div>
+    <p>修持藥師法門，在於啟發我們的菩提心，擴大心量，發願解除眾生的苦難。藥師琉璃光如來因地修行時，曾發十二大願，每一願都是針對眾生的具體痛苦而立。我們誦持藥師經，不只是在祈求加被，更是要效法藥師佛那份「看見苦、願解苦」的大悲心腸。</p>
+
+    <div class="sub-head">《摩訶般若波羅蜜多》<span class="sub-head-note">— 護國與息災</span></div>
+    <p>修持般若法門，在於運用大智慧了達空性，從而「心平則天下平」。這不是一句口號。古德云：護國必先護心，心平則世界平，心淨則佛土淨。這也是歷史上為何護國息災的法會，都要持誦般若經典的緣故。</p>
+
+    <p>簡單說：藥師經是那顆驅動我們前進的「悲願之心」，般若法門是照亮前路的「智慧之光」。悲而無智，容易情緒化，徒勞而功半；智而無悲，則冷漠自利，難以利人。唯有悲智雙運，才是圓滿的菩薩道。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 參 -->
+  <div class="section">
+    <span class="section-number">參</span>
+    <h2 class="section-title">護國息災的歷史傳承</h2>
+
+    <p>或許有人覺得：「誦經能護國？這不是迷信嗎？」讓我們回到歷史裡看看。</p>
+
+    <div class="sub-head">南北朝：鳩摩羅什大師</div>
+    <p>鳩摩羅什大師來到中土，翻譯了《金剛經》與般若系列的諸多經典。當時，他翻譯的功德，迴向給國泰民安，令正法在此土廣布流通。</p>
+
+    <div class="sub-head">唐朝：不空三藏</div>
+    <p>不空三藏重新翻譯般若經，明確立名為《仁王護國般若波羅蜜經》。這個名字清楚告訴我們：般若智慧，是護國之道。佛陀在經典中教導十六大國的國王，以般若智慧守護和平，不是以武力，而是以清淨智慧。</p>
+
+    <div class="pull-quote">
+      <p>護國必先護心。心平則世界平，心淨則佛土淨。</p>
+    </div>
+
+    <p>歷史告訴我們，一個人的心清淨了、智慧開了，那份力量會向外擴散，影響家庭、影響社群、影響整個社會。這不是神話，這是因果的運作。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 肆 -->
+  <div class="section">
+    <span class="section-number">肆</span>
+    <h2 class="section-title">解碼大智慧：摩訶般若波羅蜜多</h2>
+
+    <p>我們每天誦念「摩訶般若波羅蜜多」，但這八個字究竟是什麼意思？讓我們一一剖析。</p>
+
+    <p><span class="term">摩訶（Maha）→「大」</span>——不是說大小的「大」，而是「大而無外」，如虛空般廣大無邊。自性就是如此，沒有邊界，沒有比它更大的存在。</p>
+
+    <p><span class="term">般若（Prajna）→「智慧」</span>——不是世間的聰明才智，而是本自具足的菩提自性之智，是能照見一切真相的根本智慧。</p>
+
+    <p><span class="term">波羅蜜多（Paramita）→「到彼岸」</span>——超越生滅，到達不生不滅的境界。彼岸不在遠方，就在我們當下這顆清淨的心。</p>
+
+    <p>所以，「摩訶般若波羅蜜多」合起來的意思是：以廣大如虛空的自性智慧，超越煩惱，到達解脫彼岸。</p>
+
+    <p>那「摩訶」這個「大」，具體是怎樣的大？六祖惠能大師在《壇經》裡有非常深刻的開示，自性的真空有四個特質。</p>
+
+    <div class="sub-head">一、大而無外</div>
+    <p>沒有邊界，沒有比它更大的存在。自性如虛空，無論你往哪個方向走，都走不出它的範圍。</p>
+
+    <div class="sub-head">二、無形無相</div>
+    <p>沒有東西南北，沒有青黃赤白黑，沒有可以被執取的相狀。正因為無形無相，它才能隨緣顯現一切相。</p>
+
+    <div class="sub-head">三、清淨不搖</div>
+    <p>本自清淨，本自具足。因為無邊界，所以沒有任何東西能真正動搖它。煩惱只是浮雲，自性如天空，雲來雲去，天空從未動搖。</p>
+
+    <div class="sub-head">四、本不生滅</div>
+    <p>從未出生，故永不消滅，始終存在。這顆心的本體，超越了一切的生與死。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 伍 -->
+  <div class="section">
+    <span class="section-number">伍</span>
+    <h2 class="section-title">破除迷思：真空能生妙有</h2>
+
+    <p>說到「空」，很多人會有一個誤解——認為空就是「什麼都沒有」，認為學佛就是要放棄一切、什麼都不在乎、消極度日。這叫做「頑空」或「死空」，是非常危險的邪見。</p>
+
+    <p>六祖大師開示：「虛空包覆萬物。」真正的空，不是空無一物，而是能含藏萬物的大空間——虛空能含藏日月星辰、大地山河、花草樹木與六道眾生。正因為它是空的，它才能容納一切，它才能讓萬物在其中生滅流轉。</p>
+
+    <div class="pull-quote">
+      <p>真空，不是死寂的虛無；真空，是能生萬有的根本。真空能生「妙有」。</p>
+    </div>
+
+    <p>什麼是「妙有」？妙有就是在了解空性的基礎上，靈活地、善巧地、充滿善意地回應這個世界。它不是強迫執行的固定模式，而是因緣具足時自然湧現的最恰當行動。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 陸 -->
+  <div class="section">
+    <span class="section-number">陸</span>
+    <h2 class="section-title">法身舍利：緣起性空的運作法則</h2>
+
+    <p>要真正理解「真空生妙有」，我們需要認識「因緣法」。佛法的核心，就是「諸法從緣生，諸法從緣滅」。</p>
+
+    <p>讓我用一個很日常的例子來說明。我們面前有一支麥克風。這支麥克風是什麼？它是硬體零件加上電流，因緣和合而存在的。當我們打開開關，它就能產生聲音，麥克風發揮了「麥克風」的作用；當我們關閉電源，聲音消失了，但麥克風的本體並沒有消失，它只是回歸了一種「不執著於某一功能」的狀態，依然可以作其他用途。</p>
+
+    <div class="pull-quote">
+      <p>因緣和合則生，因緣不合則滅。正因為麥克風沒有「固定不變的本性」，它才能隨著因緣展現不同的妙用。</p>
+    </div>
+
+    <p>我們的人生也是如此。觀察萬事萬物在因緣聚散中的無常，就能體悟到沒有一個固定不變的「自我」在主宰，這就是「空性」。了解空性，我們就擁有了改變因緣的能力——因為既然一切都是因緣所生，我們就可以透過種善因、結善緣，去影響未來的果。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 柒 -->
+  <div class="section">
+    <span class="section-number">柒</span>
+    <h2 class="section-title">佛法人生修持號：四大系統全解析</h2>
+
+    <p>現在，我們把今天所學的一切，用一個很現代的比喻來綜合說明。我們的人生，就像是駕駛一輛「佛法人生修持號」，這台車有四大核心系統，各司其職，缺一不可。</p>
+
+    <div class="sub-head">一、導航系統：般若智慧（摩訶般若波羅蜜多）</div>
+    <p>修行如果沒有智慧，就像是盲人開車，再怎麼努力踩油門（精進），也只會迷路，甚至撞上別人。智慧的導航，負責規劃路線、定位方向，確保我們不走錯路、不開懸崖。「真空妙有」就是這套導航系統的最高境界——能看穿世間一切都是變化無常的（真空），同時又能積極地在生活中活出精彩、廣結善緣（妙有）。不落空，也不落有，兩者並不矛盾，因為它們本來就是「不二」的。</p>
+
+    <div class="sub-head">二、動力系統：發願精進（藥師經・感恩發願）</div>
+    <p>有了方向，還需要動力。今天是藥師法會與報恩法會，我們的動力源，正是「感恩與發願」。藥師琉璃光如來，因為看見眾生的病苦，發了十二個大願（拔除病苦、豐衣足食……），那是祂前進的「超強引擎」。當我們的心中生起感恩心（感恩佛法、感恩師父、感恩大眾護持），並跟著發願去利益他人時，這台車就有了源源不絕的燃料，這就叫做「發願精進」。</p>
+
+    <div class="sub-head">三、車體系統：定力與韌性（忍辱精進）</div>
+    <p>開車上路，不可能永遠都是平坦的高速公路。人生行菩薩道，一定會遇到爛路、坑洞，甚至是別人的挑釁（逆境）。這時候，考驗的是「車體」的韌性。韌性，就是佛法說的「忍辱與定力」。有韌性的人，遇到挫折不會一撞就碎（退失道心），而是有彈性地吸收衝擊，甚至能把逆緣轉化為「法緣」，繼續穩步前行。修行的根本，在於這份底盤的穩固。</p>
+
+    <div class="sub-head">四、雨刷除霧系統：化空能力（照見五蘊皆空）</div>
+    <p>外在的環境，我們無法完全掌控。貪嗔癡的煩惱，就像是擋風玻璃上的暴雨和濃霧，讓我們視野模糊、判斷失準。這時候，我們需要啟動「化空能力」這套雨刷。明白一切煩惱都是暫時的、虛幻的，都是因緣和合的假相，就能不再緊緊抓住它們。刷過去、放下了，眼前又是清明的天空。這正是「照見五蘊皆空，度一切苦厄」的實際操作。</p>
+
+    <p>這台車的終極目的地，就是「清淨自心，利益他人」。只要我們天天配備齊全這四套系統，每一天的生活就都是修行，每一天都能清淨自心、利益他人。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 捌 -->
+  <div class="section">
+    <span class="section-number">捌</span>
+    <h2 class="section-title">實踐密碼：「總淨心念」的功夫</h2>
+
+    <p>有了理論，接下來說說怎麼做。六祖惠能大師在《六祖壇經》裡說了一句非常重要的話：</p>
+
+    <div class="pull-quote">
+      <p>「總淨心念摩訶般若波羅蜜多。」</p>
+    </div>
+
+    <p>這句話裡藏著修持的密碼。「總淨心念」，可以從兩個維度來理解。</p>
+
+    <p>時間維度——「總」是「每一刻」：不是只在法會上念、只在早課上念，而是時時刻刻，無有間斷。行住坐臥，都在這個心念上安住。</p>
+
+    <p>空間與心念維度——「淨」是「全心全意」：心無旁騖，將心念完全清淨下來。嘴巴在誦念的同時，心必須與之相應，這叫做「口念心行」，才能真正發揮力量。</p>
+
+    <p>很多人念佛誦經，嘴巴在動，心卻在想今晚吃什麼、明天要去哪裡。那就好像車子的引擎沒有連接到輪子，空轉，走不了多遠。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 玖 -->
+  <div class="section">
+    <span class="section-number">玖</span>
+    <h2 class="section-title">實踐三階梯：從報恩到妙有行動</h2>
+
+    <p>最後，讓我們把整個開示的脈絡，整理成可以落地的三個步驟。</p>
+
+    <div class="sub-head">第一步：感恩<span class="sub-head-note">— 縮小「我執」，與空性相應</span></div>
+    <p>認知到「一切皆是因緣和合」——我今天能坐在這裡聞法，是因為有佛法住世、有師父教導、有大眾護持，少了任何一個條件，這一切都不可能發生。當我們真正生起感恩心，「我」就會縮小，「我執」自然鬆動，就與空性相應了。</p>
+
+    <div class="sub-head">第二步：發願<span class="sub-head-note">— 擴大心量，從自我轉向利他</span></div>
+    <p>效法藥師佛十二大願的精神。願從心起，心隨願轉。當我們的心從「如何讓自己快樂」，轉變為「如何讓眾生離苦得樂」，心量就立刻擴大了，菩提心就在其中萌芽。</p>
+
+    <div class="sub-head">第三步：妙有行動<span class="sub-head-note">— 靈活扮演，成就善法</span></div>
+    <p>學習觀世音菩薩「應以何身得度者，即現何身而為說法」的精神。不執著於固定的形式，根據因緣的需要，靈活地扮演不同的角色——有時是老師，有時是聆聽者，有時是行動者。只要善意在、空性在，任何角色都是菩薩道。</p>
+  </div>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <!-- 拾 -->
+  <div class="section">
+    <span class="section-number">拾</span>
+    <h2 class="section-title">結語：日日佛誕，日日成道</h2>
+
+    <p>今天，我們外在用小勺子舀水，沐浴悉達多太子的像。這是一個意義深遠的儀式——提醒我們那位太子的誕生，為這個世界帶來了什麼。</p>
+
+    <p>但真正的浴佛，是浴自心。我們每個人的心，就是那台「佛法人生修持號」，車上積了多少貪嗔癡的塵垢，才是我們最需要清洗的地方。</p>
+
+    <p>用藥師經的發願，清淨自身；用般若波羅蜜多的智慧，生出妙有。如此，每一天都是浴佛浴自心。</p>
+
+    <p>不落空，也不落有。從真空中生起妙有，在妙有中看透真空。觀空而不廢因果，行有而不忘空性，這就是「真空與妙有的不二法門」。</p>
+
+    <p>不必等到哪一個特殊的節日。超越生滅的彼岸，就在每一個清淨的當下。</p>
+  </div>
+
+  <!-- Closing gatha -->
+  <div class="gatha-block">
+    <div class="gatha-text">
+      日日佛誕，日日成道<br>
+      用發願清淨自身<br>
+      用智慧生出妙有<br>
+      每一天，都是浴佛浴自心
+    </div>
+    <div class="gatha-sub">超越生滅的彼岸，就在每一個清淨的當下</div>
+  </div>
+
+  <div class="footer-note">
+    佛曆三〇五三年　夏安居・報恩藥師浴佛法會
+  </div>
+
+</div>
+</body>
+</html>
