@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>學佛，成為更好的自己｜惟覺安公老和尚開示</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #c8a96e;
+    --amber-light: #e8d5a3;
+    --amber-dark: #8b6914;
+    --ink: #2c1f0e;
+    --ink-light: #4a3728;
+    --paper: #faf6ee;
+    --paper-warm: #f5edd8;
+    --paper-deep: #ede0c4;
+    --red-accent: #8b2020;
+    --shadow: rgba(44,31,14,0.12);
+    --pin-active: #c0392b;
+    --pin-inactive: #bbb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #e8dfc8;
+    color: var(--ink);
+    font-family: 'Noto Serif TC', serif;
+    line-height: 1.9;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ── 頁面最大寬 600px ── */
+  header, nav, main, footer {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* ── 頂部橫幅 ── */
+  header {
+    background: var(--ink);
+    color: var(--amber-light);
+    text-align: center;
+    padding: 44px 24px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 28px,
+      rgba(200,169,110,0.06) 28px, rgba(200,169,110,0.06) 29px
+    );
+  }
+  header .tag {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--amber);
+    margin-bottom: 14px;
+  }
+  header h1 {
+    font-size: clamp(22px, 5vw, 34px);
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  header .subtitle {
+    font-size: 13px;
+    color: rgba(232,213,163,0.7);
+    letter-spacing: 2px;
+  }
+  header .ornament {
+    margin: 18px auto 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--amber), transparent);
+  }
+
+  /* ── 導覽列 ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250,246,238,0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--paper-deep);
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--ink-light);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all .2s;
+  }
+  nav a:hover {
+    color: var(--amber-dark);
+    border-bottom-color: var(--amber);
+    background: var(--paper-warm);
+  }
+
+  /* ── 主容器 ── */
+  main {
+    background: var(--paper);
+    padding: 0 16px 64px;
+  }
+
+  /* ── 區塊通用 ── */
+  .section { margin-top: 52px; }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .section-number {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--amber-dark);
+    background: var(--paper-deep);
+    padding: 3px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .section-title {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--ink);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--amber);
+    flex: 1;
+  }
+
+  /* ══════════════════════════════
+     原文
+  ══════════════════════════════ */
+  .article-box {
+    background: var(--paper-warm);
+    border: 1px solid var(--paper-deep);
+    border-left: 4px solid var(--amber);
+    padding: 28px 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px var(--shadow);
+  }
+  .article-box .article-title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+  }
+  .article-box .article-meta {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    color: var(--amber-dark);
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--paper-deep);
+  }
+  .article-box p {
+    margin-bottom: 16px;
+    text-indent: 2em;
+    color: var(--ink-light);
+    font-size: 15px;
+  }
+  .article-box .sub-heading {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--ink);
+    margin: 28px 0 14px;
+    text-indent: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .article-box .sub-heading::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: var(--amber);
+    flex-shrink: 0;
+  }
+
+  /* ── 導語 ── */
+  .preface {
+    padding: 44px 8px 36px;
+    text-align: justify;
+  }
+  .preface p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2.2;
+    color: rgba(74, 55, 40, 0.78);
+    letter-spacing: 0.5px;
+    text-indent: 0;
+    margin: 0;
+  }
+
+  /* ══════════════════════════════
+     摘要卡片
+  ══════════════════════════════ */
+  .summary-grid { display: grid; gap: 10px; }
+
+  .summary-card {
+    background: #fff;
+    border: 1px solid var(--paper-deep);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px var(--shadow);
+    transition: box-shadow .2s;
+  }
+  .summary-card:hover { box-shadow: 0 3px 14px var(--shadow); }
+
+  .summary-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--amber-dark);
+    transition: background .2s;
+  }
+  .summary-trigger:hover { background: var(--paper-warm); }
+  .summary-trigger.open {
+    background: var(--ink);
+    color: var(--amber-light);
+  }
+  .summary-trigger .s-icon {
+    margin-left: auto;
+    font-size: 16px;
+    color: var(--amber);
+    transition: transform .3s;
+    flex-shrink: 0;
+  }
+  .summary-trigger.open .s-icon {
+    transform: rotate(45deg);
+    color: var(--amber-light);
+  }
+  .summary-body {
+    display: none;
+    padding: 0 18px 20px;
+    border-top: 1px solid var(--paper-deep);
+    animation: fadeIn .2s ease;
+  }
+  .summary-body.open { display: block; }
+  .summary-body-inner {
+    padding-top: 16px;
+    font-size: 14px;
+    color: var(--ink-light);
+    line-height: 1.85;
+  }
+  .summary-body-inner p { margin-bottom: 10px; text-indent: 2em; }
+  .s-block-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--amber-dark);
+    margin: 20px 0 8px;
+    padding-left: 10px;
+    border-left: 3px solid var(--amber);
+  }
+  .s-block-title:first-child { margin-top: 0; }
+  .summary-body-inner ul { list-style: none; padding-left: 4px; margin-bottom: 10px; }
+  .summary-body-inner ul li {
+    padding: 3px 0 3px 16px;
+    position: relative;
+    font-size: 13.5px;
+  }
+  .summary-body-inner ul li::before {
+    content: '‧';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+  }
+
+  /* ══════════════════════════════
+     學習單卡片（帶圖釘）
+  ══════════════════════════════ */
+  .qa-grid { display: grid; gap: 10px; }
+
+  .qa-card {
+    background: #fff;
+    border: 1px solid var(--paper-deep);
+    border-radius: 4px;
+    overflow: visible;
+    box-shadow: 0 1px 6px var(--shadow);
+    transition: box-shadow .2s;
+    position: relative;
+  }
+  .qa-card:hover { box-shadow: 0 3px 14px var(--shadow); }
+
+  /* 圖釘按鈕 */
+  .pin-btn {
+    position: absolute;
+    top: -10px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform .2s;
+  }
+  .pin-btn:hover { transform: scale(1.2); }
+  .pin-btn svg {
+    width: 22px;
+    height: 22px;
+    transition: fill .2s, filter .2s;
+  }
+  .pin-btn svg .pin-head { fill: var(--pin-inactive); }
+  .pin-btn svg .pin-body { fill: #999; }
+  .qa-card.pinned .pin-btn svg .pin-head { fill: var(--pin-active); }
+  .qa-card.pinned .pin-btn svg .pin-body { fill: #8b2020; }
+  .qa-card.pinned {
+    border-color: #e8a090;
+    background: #fff8f7;
+  }
+  .qa-card.pinned::before {
+    content: '已釘選複習';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--pin-active);
+    background: #fdecea;
+    padding: 2px 10px;
+    border-radius: 4px 0 4px 0;
+    border-right: 1px solid #e8a090;
+    border-bottom: 1px solid #e8a090;
+  }
+
+  .qa-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 18px;
+    padding-right: 48px; /* 留給圖釘空間 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--ink);
+    transition: background .2s;
+  }
+  .qa-question:hover { background: var(--paper-warm); }
+  .qa-question.open {
+    background: var(--ink);
+    color: var(--amber-light);
+  }
+  .qa-num {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--amber);
+    background: var(--paper-deep);
+    padding: 2px 7px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .qa-question.open .qa-num {
+    background: rgba(200,169,110,0.2);
+    color: var(--amber-light);
+  }
+  .qa-icon {
+    margin-left: auto;
+    font-size: 16px;
+    color: var(--amber);
+    transition: transform .3s;
+    flex-shrink: 0;
+  }
+  .qa-question.open .qa-icon {
+    transform: rotate(45deg);
+    color: var(--amber-light);
+  }
+  .qa-answer {
+    display: none;
+    padding: 0 18px 20px;
+    border-top: 1px solid var(--paper-deep);
+    animation: fadeIn .22s ease;
+  }
+  .qa-answer.open { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .qa-answer-inner {
+    padding-top: 16px;
+    color: var(--ink-light);
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .qa-answer-inner p {
+    margin-bottom: 12px;
+    text-indent: 2em;
+  }
+  .qa-answer-inner p:last-child { margin-bottom: 0; }
+  .qa-answer-inner .point {
+    font-weight: 700;
+    color: var(--ink);
+    text-indent: 0;
+    margin: 16px 0 6px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .qa-answer-inner .point::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: var(--amber);
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .qa-answer-inner ul {
+    list-style: none;
+    padding-left: 16px;
+    margin-bottom: 10px;
+  }
+  .qa-answer-inner ul li {
+    padding: 2px 0 2px 14px;
+    position: relative;
+    font-size: 13.5px;
+  }
+  .qa-answer-inner ul li::before {
+    content: '‧';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+  }
+
+  /* 釘選篩選條 */
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .filter-btn {
+    padding: 5px 14px;
+    border: 1px solid var(--paper-deep);
+    border-radius: 20px;
+    background: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--ink-light);
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--ink);
+    color: var(--amber-light);
+    border-color: var(--ink);
+  }
+  .filter-btn.pinned-filter.active {
+    background: var(--pin-active);
+    border-color: var(--pin-active);
+  }
+
+  /* ── 頁尾 ── */
+  footer {
+    background: var(--paper);
+    text-align: center;
+    padding: 28px 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(44,31,14,0.35);
+    border-top: 1px solid var(--paper-deep);
+  }
+
+  .divider {
+    text-align: center;
+    margin: 40px 0 0;
+    color: var(--amber);
+    letter-spacing: 8px;
+    font-size: 13px;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="tag">中台山月刊 第221期</div>
+  <h1>學佛，成為更好的自己</h1>
+  <div class="subtitle">惟覺安公老和尚開示</div>
+  <div class="ornament"></div>
+</header>
+
+<nav>
+  <a href="#original">一、原文</a>
+  <a href="#summary">二、摘要</a>
+  <a href="#qa">三、學習單</a>
+</nav>
+
+<main>
+
+  <!-- ══ 一、原文 ══ -->
+  <section class="section" id="original">
+    <div class="section-header">
+      <span class="section-number">SECTION 01</span>
+      <h2 class="section-title">原　文</h2>
+    </div>
+    <div class="preface">
+      <p>這篇開示闡述了常隨佛學的深刻內涵，強調修行應從淨化身口意三業著手，將佛陀的教法落實於日常行為中。老和尚指出，真正的學佛並非向外祈求，而是要契悟自性三寶，透過覺察與覺照來降伏內心的煩惱與執著。修行者應秉持無住無求的心境，在動靜之間保持正念與清淨，廣修善行而不著相。最終目標是以慈悲與智慧轉化心境，達到心境如一且圓滿福德的解脫境界。透過這種自我覺醒的過程，每個人都能發掘本具的佛性，成就更好的自己。</p>
+    </div>
+
+    <div class="article-box">
+      <div class="article-title">【學佛，成為更好的自己】</div>
+      <div class="article-meta">隨佛修學淨三業——惟覺安公老和尚開示　節錄於中台山月刊221期</div>
+
+      <p>修行學佛，就是要向佛學習。「普賢十大願」也說「常隨佛學」，學習什麼？布施、持戒、忍辱、精進、禪定、般若；修戒、修定、修慧……總的來說，就是要學佛的身、學佛的口、學佛的心。</p>
+      <p>什麼是學佛的身？修一切善、斷一切惡，諸惡莫作、眾善奉行，持戒清淨，行住坐臥不離四威儀，所謂「行如風，坐如鐘，臥如弓，立如松」。什麼是學佛的口？經常保持口業清淨，不惡口、不兩舌、不綺語、不妄言，多講好話，不講壞話。什麼是學佛的心？就是要契悟菩提心，菩提心，就是入不可思議解脫境界。境界，就是指我們的心境。時時刻刻任心自在、堅住正念，這樣就是悟到佛的心。</p>
+
+      <div class="sub-heading">無住無求　心自寧一</div>
+
+      <p>佛法一個是事，一個是理。事，就是福德；理，就是菩提心。外面的三寶屬於事──佛像是佛寶，經、律、論三藏是法寶，比丘、比丘尼是僧寶，這是外面的三寶。藉由外面事相上的三寶，啟發我們心當中的三寶。見到心當中的自性三寶，才是究竟的正道。</p>
+      <p>我們拜佛，不是在求佛，佛是無所求的。無所求、無所住，就是佛。如《金剛經》所說：「應無所住而生其心。」《佛說四十二章經》云：「觀天地，念非常；觀世界，念非常；觀靈覺，即菩提。」靈知靈覺才是自己的本心。靈知靈覺不清淨，就是眾生；清淨，就是菩薩；完全清淨了，就是佛。假使修行學佛沒有這個觀念，就容易走錯路、走遠路，修一百年、一千年……都沒有用。</p>
+      <p>古人說心外求道、心外求佛，就像日中找影子一樣，迷失了自己。「佛者，覺也。」每個人心當中都有一個自性佛，諸位聽法這個心，念念分明，即是佛。佛性人人本具，不必去求，一求，心就不在了；一求，心就跑掉了。《六祖壇經》云：「前念迷即凡夫，後念悟即佛；前念著境即煩惱，後念離境即菩提。」覺，就是覺察、覺照、覺悟。心當中起了煩惱，馬上就知道，這就是覺察。知道起了煩惱，把它看破、化掉，這就是覺照。這就是心當中的自性佛。</p>
+      <p>我們每一念都要起善念，不要起惡念；起了惡念，要把它化掉。三十七助道品「四正勤──已生善念令增長，未生善念令速生；已生惡念令滅除，未生惡念令不生」這就是要靠覺。行住坐臥、動靜閒忙，覺性都要存在。例如，正想要發脾氣時，自己察覺了，馬上把它伏下去。為什麼不能發脾氣？火燒功德林！這把火一燒，把過去的功德燒得乾乾淨淨的，所以，馬上把它伏下來、化掉，這就是覺，大家要了解。</p>
+      <p>《金剛經》云：「應如是住，如是降伏其心。」無論是貪心、瞋心、癡心、慢心、疑心、邪見，只要一生起，就把它降伏下去。要從這裡開始來返照自心，時時刻刻覺察、覺照、覺悟。目的就是保持這一念清淨心、保持這個正念。《六祖壇經》云：「正見名出世，邪見名世間。」堅住正念，隨順覺性，自性佛才存在。</p>
+
+      <div class="sub-heading">三業淨化　惺惺寂寂</div>
+
+      <p>所以，要如何「常隨佛學」？就是心要有正念、口要清淨、身業要清淨，要向佛學習，身、口、意三業都沒有過失。我們的心，不起貪心、瞋心、癡心，乃至於沒有慢心、沒有疑心。我們的口業無失，時時刻刻都要講好話，不要講壞話，如古人所言：「無道人之短，無說己之長。」這樣口業就沒有過失。現在的人正好相反，專門說人家的是非，拚命地膨脹自己，這樣口業就有過失，沒有學習佛的口。</p>
+      <p>學佛的身，要走大路，不要走小路；要走明路，不要走暗路。假使真正做到三業無失，不但心地光明，一身都是光明，這就是「常隨佛學」──以佛心為己心，以佛行為己行。佛的心是什麼心？就是菩提心。菩提心是根本。要達到菩提心，先要有慈悲心、恭敬心、柔軟心、謙卑心、無我心、孝道心，要有知恩心、感恩心、報恩心、精進心，最後要歸於無為心，這樣就是以佛心為己心、以佛行為己行。</p>
+      <p>釋迦牟尼佛廣度眾生，席不暇暖，從東到西、從南到北，從來沒有休息過，上半夜、中半夜、下半夜，無有間斷。一般人做了一點事情就怨聲載道，覺得累得不得了，跟佛比起來就相差很遠。所謂「三祇修福慧，百劫修相好」，歷經三大阿僧祇劫，行人所不能行、忍人所不能忍，圓滿六波羅蜜，這樣就能達到佛的境界。</p>
+      <p>修行學佛，一個是動，一個是靜。祖師說：「靜則一念不生，動則萬善圓彰。」打坐的時候，不起一個念頭，心就像一面鏡子一樣，不落一點塵垢；就像一潭止水一樣，不起一點波浪，不浮躁、不妄動，時時刻刻都有定力、有智慧，這就是常隨佛學。</p>
+      <p>動的時候，心中只起善念，口只說好話，身只修善行，這樣就真正達到常隨佛學的境界。古德云：「一乘任運，萬德莊嚴者，諸佛之法界。」所謂「一乘」，就是時時刻刻不離當念，如如不動；在如如不動當中，要起「萬行因花」──以萬行之因花，莊嚴無上佛果，最後修而無修達到不思議的解脫境界。</p>
+    </div>
+  </section>
+
+  <div class="divider">※　※　※</div>
+
+  <!-- ══ 二、摘要 ══ -->
+  <section class="section" id="summary">
+    <div class="section-header">
+      <span class="section-number">SECTION 02</span>
+      <h2 class="section-title">摘　要（點擊展開）</h2>
+    </div>
+    <div class="summary-grid">
+
+      <div class="summary-card">
+        <button class="summary-trigger" onclick="toggleSummary(this)">
+          點擊展開完整摘要
+          <span class="s-icon">＋</span>
+        </button>
+        <div class="summary-body">
+          <div class="summary-body-inner">
+
+            <div class="s-block-title">一、淨化三業：學佛的具體實踐</div>
+            <p>修行學佛的總綱領在於學佛的身、口、意，將佛陀的教法落實於生活。</p>
+            <ul>
+              <li><strong>學佛的身：</strong>「諸惡莫作、眾善奉行」，嚴持戒律，遵守「四威儀」（行如風、坐如鐘、臥如弓、立如松），行為光明磊落，「走大路、明路」。</li>
+              <li><strong>學佛的口：</strong>保持口業清淨，遠離惡口、兩舌、綺語、妄言，標準是「不道人之短，不說己之長」。</li>
+              <li><strong>學佛的心：</strong>契悟菩提心，讓心境時時刻刻任心自在、堅住正念。</li>
+            </ul>
+
+            <div class="s-block-title">二、覺性導航：識自本心</div>
+            <p>佛並非外求，而是每個人本具的「靈知靈覺」。</p>
+            <ul>
+              <li><strong>自性佛：</strong>聽法的心、念念分明的心就是佛，不必外求；一求，心就跑掉了。</li>
+              <li><strong>覺的功夫：</strong>覺察（煩惱起時立刻知道）→ 覺照（看破、化掉）→ 覺悟（契悟自性佛）。</li>
+              <li><strong>對治瞋心：</strong>發脾氣是「火燒功德林」，必須透過覺性將怒火伏下、化掉。</li>
+            </ul>
+
+            <div class="s-block-title">三、功德基礎：菩提心的基石</div>
+            <p>要達到菩提心，必須先從基礎德行做起。</p>
+            <ul>
+              <li><strong>必備心態：</strong>慈悲心、恭敬心、柔軟心、謙卑心、無我心、孝道心，以及知恩、感恩、報恩的心，最後歸於無為心。</li>
+              <li><strong>精進不懈：</strong>效法佛陀廣度眾生、無有疲厭的精神，即便在忙碌中也不生怨尤。</li>
+            </ul>
+
+            <div class="s-block-title">四、動靜之間的修持原則</div>
+            <ul>
+              <li><strong>靜（打坐時）：</strong>「一念不生」，心如鏡不染塵、如水不起波，保持定力與智慧。</li>
+              <li><strong>動（處事時）：</strong>「萬善圓彰」，每一念都是善念，每一行都是善行。</li>
+              <li><strong>終極目標：</strong>以「萬行因花」莊嚴無上佛果，達到「修而無修」的不可思議解脫境界。</li>
+            </ul>
+            <p>學佛就是「以佛心為己心，以佛行為己行」，在行住坐臥中隨順覺性，保持清淨心與正念。</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider">※　※　※</div>
+
+  <!-- ══ 三、學習單 ══ -->
+  <section class="section" id="qa">
+    <div class="section-header">
+      <span class="section-number">SECTION 03</span>
+      <h2 class="section-title">學習單</h2>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" id="filter-all" onclick="filterCards('all')">全部</button>
+      <button class="filter-btn pinned-filter" id="filter-pinned" onclick="filterCards('pinned')">📌 已釘選</button>
+    </div>
+
+    <div class="qa-grid" id="qa-grid">
+
+      <!-- Q01 -->
+      <div class="qa-card" data-id="1">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/>
+            <rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/>
+            <circle cx="12" cy="20" r="1.5" class="pin-body"/>
+          </svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 01</span>
+          請教導初學者如何從身口意三業開始向佛學習？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">學佛的身</div>
+            <p>核心在於「諸惡莫作、眾善奉行」。遵循四威儀（行如風、坐如鐘、臥如弓、立如松），行事光明磊落，走大路、走明路，不走偏門或暗路。</p>
+            <div class="point">學佛的口</div>
+            <p>保持口業清淨，練習不惡口、不兩舌、不綺語、不妄言。秉持「不道人之短，不說己之長」，不評論他人是非，也不誇耀自己。</p>
+            <div class="point">學佛的心</div>
+            <p>心中生起貪瞋癡慢疑等煩惱時，立刻覺察；知道後將其看破化掉（覺照）。念念生起善念，透過四正勤令惡念滅除、善念增長。菩提心的達成需從慈悲心、恭敬心、謙卑心、無我心等基石做起。</p>
+            <div class="point">總結</div>
+            <p>動時萬善圓彰，靜時一念不生。初學者學佛並非向外求佛，而是「以佛心為己心，以佛行為己行」。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q02 -->
+      <div class="qa-card" data-id="2">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 02</span>
+          什麼是四威儀？如何在日常生活中練習？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <p>「四威儀」是指行住坐臥的端正儀態：行如風、坐如鐘、臥如弓、立如松。</p>
+            <div class="point">核心</div>
+            <p>練習四威儀並非只是調整外在姿勢，核心在於「覺性都要存在」。無論走路、站立、坐下或睡覺，都要保持正念與覺察。</p>
+            <ul>
+              <li>動（行走辦事）：練習萬善圓彰，走大路、走明路；心起善念、口說好話、身修善行。</li>
+              <li>靜（打坐禪修）：練習一念不生，心如明鏡不落塵垢，如止水不起波浪，保持定力與智慧。</li>
+            </ul>
+            <p>在每一個動作中保持「心有正念、身業清淨」，達到以佛行為己行的境界。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q03 -->
+      <div class="qa-card" data-id="3">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 03</span>
+          什麼是「自性三寶」？它與外在三寶有什麼不同？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">外在三寶（事）</div>
+            <ul>
+              <li>佛寶：佛像</li>
+              <li>法寶：經律論三藏</li>
+              <li>僧寶：比丘、比丘尼</li>
+            </ul>
+            <div class="point">自性三寶（理）</div>
+            <p>每個人心中本具的「靈知靈覺」或「自性佛」。「佛者，覺也」，聽法這念心、念念分明的心就是佛，不必外求。</p>
+            <div class="point">關係</div>
+            <ul>
+              <li>外在三寶是「事」，著重福德修造；自性三寶是「理」，著重菩提心的契悟。</li>
+              <li>外在三寶的作用在於「啟發」心中的自性三寶。</li>
+              <li>見到心中的自性三寶，才是究竟的正道。自性佛本質是「無所求、無所住」。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q04 -->
+      <div class="qa-card" data-id="4">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 04</span>
+          如何察覺自己正陷入「心外求佛」的邪見？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <ul>
+              <li><strong>檢視是否有「求」的心態：</strong>向外索求保佑或奇蹟，而非回歸內心清淨，就是迷失。「一求，心就不在了。」</li>
+              <li><strong>辨識對佛的認知：</strong>認為佛只是外在偶像而忽略靈知靈覺，就如「日中找影子」，走錯路、走遠路。</li>
+              <li><strong>觀察是否執著於「事」忘失「理」：</strong>只執著外在形式與福德，未曾契悟「無所求、無所住」，尚未踏上究竟正道。</li>
+              <li><strong>覺察是否隨順煩惱而轉：</strong>心念黏著外境，隨貪瞋癡慢疑邪見而動，代表正被外境牽著走。</li>
+            </ul>
+            <p>察覺方法就是練習「覺性常在」。發現自己試圖從心外尋找救贖時，立刻覺察並透過覺照，將心帶回當下「念念分明、如如不動」的清淨心。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q05 -->
+      <div class="qa-card" data-id="5">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 05</span>
+          如何透過「覺察」與「覺照」來降伏心中的煩惱？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">覺察：第一時間的發現</div>
+            <p>心中起貪瞋癡慢疑或邪見等煩惱時，能立刻知道，這就是覺察。覺性必須存在於「行住坐臥、動靜閒忙」之中。</p>
+            <div class="point">覺照：運用智慧看破與化解</div>
+            <p>知道起了煩惱後，進一步將它看破、化掉，這就是覺照。以發脾氣為例：察覺怒火→思惟「火燒功德林」的後果→將怒火「伏下來、化掉」。</p>
+            <div class="point">四正勤與正念</div>
+            <ul>
+              <li>已生惡念：透過覺照令其滅除。</li>
+              <li>未生惡念：透過警覺令其不生。</li>
+              <li>堅住正念：如《金剛經》所云「應如是住，如是降伏其心」。</li>
+            </ul>
+            <p>降伏煩惱不是向外求佛，而是「返照自心」，在煩惱生起的當下立刻覺察並覺照化解。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q06 -->
+      <div class="qa-card" data-id="6">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 06</span>
+          「離境即菩提」在修行的層次為何？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">凡夫轉向佛的轉折點</div>
+            <p>《六祖壇經》：「前念著境即煩惱，後念離境即菩提。」心念黏著境界是「迷」、是煩惱；心念不隨境轉是「悟」、是菩提。</p>
+            <div class="point">靈知靈覺的清淨層次</div>
+            <ul>
+              <li>眾生（凡夫）：靈知靈覺不清淨，心隨境動。</li>
+              <li>菩薩：靈知靈覺達到清淨的程度。</li>
+              <li>佛：靈知靈覺完全清淨，究竟圓滿。</li>
+            </ul>
+            <div class="point">覺的實踐層次</div>
+            <p>覺察（發現心著境）→ 覺照（將執著看破化掉，實踐「離境」）→ 覺悟（契悟不隨境轉的自性佛）。</p>
+            <p>「離境即菩提」是修行從「心外求法」轉向「返照自心」的核心轉捩點。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q07 -->
+      <div class="qa-card" data-id="7">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 07</span>
+          什麼是「四正勤」？如何應用在改掉壞習慣？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <p>「四正勤」是三十七助道品的一部分：</p>
+            <ul>
+              <li>已生惡念令滅除</li>
+              <li>未生惡念令不生</li>
+              <li>未生善念令速生</li>
+              <li>已生善念令增長</li>
+            </ul>
+            <div class="point">應用步驟</div>
+            <p>首先建立覺的功夫：壞習慣念頭剛起時立刻覺察，知道後用智慧看破化掉（覺照）。從意業根源下手，對治貪瞋癡慢疑。不只禁絕惡習，更以善習慣替換——以「不道人之短」替換說是非的習慣，以慈悲謙卑心取代粗暴自私。動時萬善圓彰，靜時一念不生，兩者相輔相成。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q08 -->
+      <div class="qa-card" data-id="8">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 08</span>
+          什麼是「火燒功德林」？發脾氣對修行的影響很大嗎？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">定義</div>
+            <p>這是一個生動的比喻：修行人辛苦累積的功德如同茂密的森林；一旦生起瞋心（發脾氣），這把憤怒之火就會瞬間將功德森林燒得乾乾淨淨。</p>
+            <div class="point">發脾氣對修行的影響</div>
+            <ul>
+              <li>摧毀功德：長期努力付諸流水。</li>
+              <li>障礙菩提心：瞋心是意業不清淨，與佛心的慈悲柔軟背道而馳。</li>
+              <li>迷失覺性：發脾氣代表當下覺性不在，心被外境帶走。</li>
+              <li>身心受損：靈知靈覺不清淨，使人走錯路、走遠路。</li>
+            </ul>
+            <div class="point">如何應對</div>
+            <p>正想發脾氣時→覺察怒火→覺照「火燒功德林」的後果→透過覺性將怒火「伏下來、化掉」→修習四正勤保持清淨心。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q09 -->
+      <div class="qa-card" data-id="9">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 09</span>
+          如果已經發脾氣了，該如何修復「火燒功德林」後的損失？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">立即啟動覺察與覺照</div>
+            <p>不要陷入自責或讓情緒相續，立刻覺察（自覺是修復的開始），再透過覺照將殘餘怒火與懊悔「看破、化掉」，將心帶回清淨的當下。</p>
+            <div class="point">四正勤止損重建</div>
+            <ul>
+              <li>已生惡念令滅除：靠覺性令怒火熄滅，不讓負面情緒蔓延。</li>
+              <li>未生善念令速生：重新生起慈悲與懺悔的善念。</li>
+            </ul>
+            <div class="point">從三業重新積累福德</div>
+            <ul>
+              <li>口業：回歸口業清淨，以多講好話轉化先前惡口。</li>
+              <li>意業：重新培養慈悲心、柔軟心、謙卑心、感恩心。</li>
+              <li>身業：重新要求自己回到四威儀，讓心境重歸寧靜。</li>
+            </ul>
+            <p>不要執著於「我剛剛發了脾氣」的懊惱（著境即煩惱），察覺並轉身離開那個境界（離境即菩提）。修復沒有捷徑，唯有「返照自心」，將發脾氣化為提升覺察力的契機。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="qa-card" data-id="10">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 10</span>
+          如何區分「正見」與「邪見」？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">本質區分</div>
+            <p>《六祖壇經》：「正見名出世，邪見名世間。」正見是超越世間煩惱、契悟真理的見解；邪見是仍處於世間迷執、隨順煩惱的見解。</p>
+            <div class="point">核心觀點差異</div>
+            <ul>
+              <li>正見：認識到「佛者，覺也」，聽法這念心、念念分明的心就是佛，不向外馳求，是「識自本心」。</li>
+              <li>邪見：「心外求佛」或「心外求道」，如同日中找影子，走錯路、走遠路。邪見與貪瞋癡慢疑並列為煩惱。</li>
+            </ul>
+            <div class="point">實踐上</div>
+            <p>透過「覺」的功夫：覺察邪見一生起就立刻知道；覺照：將它看破化掉，使心回歸清淨。能「堅住正念，隨順覺性」時，自性佛才存在，這就是正見的體現。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="qa-card" data-id="11">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 11</span>
+          「識自本心」對於轉化邪見有什麼幫助？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">矯正修行根本方向</div>
+            <p>透過認識「靈知靈覺才是自己的本心」，明白佛性人人本具不必外求。了解「聽法這念心，念念分明，即是佛」，就能轉化「佛在心外」的邪見，避免走錯路走遠路。</p>
+            <div class="point">啟動覺察與覺照的工具</div>
+            <p>識自本心即是「覺」。有了這份覺性，當邪見一生起，能立刻覺察並進行覺照（看破並化掉），透過返照自心及時降伏邪見，使心回歸清淨。</p>
+            <div class="point">從世間轉向出世的正見</div>
+            <p>識自本心意味著能「堅住正念，隨順覺性」，本身就是正見的體現。心不再黏著外境，就能離開世間迷執，契入菩提與不可思議的解脫境界。靈知靈覺從不清淨轉為清淨，邪見自然消融，轉化為智慧與光明。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q12 -->
+      <div class="qa-card" data-id="12">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 12</span>
+          什麼是「任心自在」與「堅住正念」的具體心境？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">任心自在</div>
+            <p>不受外境束縛、無求無掛的解脫狀態。佛的心境是「無所求、無所住」，一產生「求」的心，清淨心就跑掉了。心念不再黏著外境，就能從煩惱中解脫。在忙碌的萬行中，心依然能「一乘任運」，達到修而無修、隨緣自在的境界。</p>
+            <div class="point">堅住正念</div>
+            <p>高度覺醒、如如不動的專注狀態。時時保持那一念清淨心，不讓貪瞋癡慢疑邪見干擾。覺性常在，無論行住坐臥或動靜閒忙，都隨順這念靈知靈覺的自性佛。</p>
+            <ul>
+              <li>靜時：心如明鏡不落塵垢，如止水不起波浪，具足定力與智慧。</li>
+              <li>動時：心「不離當念，如如不動」，在廣度眾生的忙碌中依然保持正念，不生怨尤。</li>
+            </ul>
+            <p>兩者相輔相成，均以「識自本心」為基礎。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q13 -->
+      <div class="qa-card" data-id="13">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 13</span>
+          如何培養「慈悲心」與「柔軟心」等基礎德行？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">運用覺察與覺照轉化對立</div>
+            <p>慈悲與柔軟的最大障礙是瞋心。心中生起憤怒、不滿或傲慢時，立刻覺察並透過覺照看破化掉。能隨時察覺並化掉心中火氣，心境自然會變得柔軟。</p>
+            <div class="point">從口業的練習開始</div>
+            <p>練習「不道人之短，不說己之長」，不評論他人是非心就不尖銳；不誇耀自己心就謙卑與柔軟。</p>
+            <div class="point">以知恩與報恩為養分</div>
+            <p>慈悲心源自對眾生恩德的感念。培養知恩、感恩、報恩的心，效法佛陀廣度眾生而席不暇暖的精神，以慈悲心與精進心取代疲累與抱怨。</p>
+            <div class="point">透過身業的威儀攝心</div>
+            <p>實踐四威儀讓內心安定，不再浮躁妄動。行為光明磊落，走大路、走明路，心地自然光明、無我。靜時練習一念不生，本具的慈悲與智慧自然現前；動時練習萬善圓彰，在服務他人中實際練習恭敬心與無我心。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q14 -->
+      <div class="qa-card" data-id="14">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 14</span>
+          如何透過「知恩與報恩」的心來穩固菩提心？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">知恩報恩是菩提心的基石</div>
+            <p>「知恩心、感恩心、報恩心」是達到菩提心的必要條件，能幫助轉化習氣，使心境趨向清淨。</p>
+            <div class="point">報恩即是精進</div>
+            <p>佛陀為了報眾生恩，從早到晚無有間斷廣度眾生。一般人做點事就覺得累、怨聲載道，正是缺乏報恩心的表現。透過知恩與報恩的心，能在忙碌中依然保持萬善圓彰，不生疲倦或怨恨。</p>
+            <div class="point">透過報恩心實踐以佛行為己行</div>
+            <p>心懷知恩與報恩時，所修的一切善法就不再是為了私利，而是為了回報眾生與佛恩。這種報恩的願力能幫助「堅住正念」，讓每一念都是善念，每一行都是善行。</p>
+            <div class="point">從報恩心歸於無為心</div>
+            <p>修行最終要從有為的報恩行動，回歸「無為心」與「無所求」的境界，達到「修而無修」的解脫境界。知恩與報恩的心是穩固菩提心的養分，讓靈知靈覺轉為完全清淨的佛境。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q15 -->
+      <div class="qa-card" data-id="15">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 15</span>
+          解釋「靜則一念不生，動則萬善圓彰」的修行真義。
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">靜則一念不生：定慧一體的「理」</div>
+            <p>打坐時心要像明鏡不落塵垢、像止水不起波浪，保持平靜不妄動。這種「一念不生」並非死水枯坐，而是在寂靜中時時刻刻具足定力與智慧，才是真正的常隨佛學。</p>
+            <div class="point">動則萬善圓彰：萬行莊嚴的「事」</div>
+            <p>在動態的生活中，心中只起善念，口中只說好話，身體只修善行。效法佛陀廣度眾生無有間斷的精神，即使忙碌也不生怨尤，以「萬行因花」莊嚴無上佛果。</p>
+            <div class="point">動靜一如：不思議解脫境界</div>
+            <p>無論靜態的一念不生，還是動態的萬善圓彰，心始終「不離當念，如如不動」。在動亂中保持正念，在寂靜中具足萬行，就能超越事與理的隔閡，進入不思議的解脫境界——「修而無修」。</p>
+            <p>真義是：以佛心為己心（理）、以佛行為己行（事），在動靜之間都能隨順覺性，保持靈知靈覺的清淨與分明。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q16 -->
+      <div class="qa-card" data-id="16">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 16</span>
+          打坐時若無法做到「一念不生」該怎麼辦？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <p>修行並非要求一蹴而就的完全寂靜，這正是練習「覺察」與「覺照」的最佳時機。</p>
+            <div class="point">運用覺察與覺照</div>
+            <p>念頭一動，馬上就要「知道」（覺察）；知道念頭生起後，不要跟隨它，將它「看破、化掉」（覺照）。練習「前念著境即煩惱，後念離境即菩提」，發現心黏著時，察覺並轉身離開，清淨心就現前了。</p>
+            <div class="point">避免過度強求</div>
+            <p>佛性人人本具，不需外求，「一求，心就不在了」。那個「念念分明」知道自己正在打坐的心，就是佛。只要保持這念心的清淨與正念，就是在修行。</p>
+            <div class="point">建立德行基礎</div>
+            <p>若日常三業不淨（愛說是非、愛發脾氣），打坐時就容易心神不寧。能在日常做到「動則萬善圓彰」，靜坐時自然容易趨於一念不生。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q17 -->
+      <div class="qa-card" data-id="17">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 17</span>
+          如何練習「一念不生」的靜坐定力？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">掌握「心如鏡水」的心理狀態</div>
+            <p>心像一面鏡子，不落塵垢，清澈映照萬物而不執著；也像一潭止水，不起任何波浪，保持不浮躁、不妄動的狀態，在安靜中保有定力與智慧。</p>
+            <div class="point">運用覺察與覺照對治妄念</div>
+            <p>心中生起雜念時，立刻「知道」（覺察）；知道後不跟隨它，將它看破化掉（覺照）。練習「前念著境即煩惱，後念離境即菩提」，察覺並轉身離開，清淨心就現前了。</p>
+            <div class="point">實踐無求、無住的原則</div>
+            <p>不要急於「求」得定力，靈知靈覺的自性佛人人本具，一求清淨心就跑掉了。練習《金剛經》所說「應無所住而生其心」，不執著於任何境界。</p>
+            <div class="point">靠日常萬善支撐靜坐</div>
+            <p>若日常三業不淨，打坐時心神不寧。先培養慈悲心、恭敬心、柔軟心、謙卑心與精進心，能做到「動則萬善圓彰」，靜坐時自然容易達到「一念不生」。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q18 -->
+      <div class="qa-card" data-id="18">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 18</span>
+          在忙碌的動態生活中，如何保持「萬善圓彰」？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <p>「萬善圓彰」是指在動的狀態下做到「心中只起善念，口只說好話，身只修善行」。</p>
+            <div class="point">意業：只起善念，不生怨尤</div>
+            <p>實踐四正勤，念念生起善念；若起惡念，立刻透過覺性化掉。效法佛陀席不暇暖的精進精神，改掉「做一點事就怨聲載道」的習慣。融入慈悲心、恭敬心、感恩心。</p>
+            <div class="point">口業：多講好話，不傳是非</div>
+            <p>隨時提醒自己不惡口、不兩舌、不綺語、不妄言。秉持「不道人之短，不說己之長」，不隨便評論他人是非，也不膨脹自己。</p>
+            <div class="point">身業：光明磊落，持守威儀</div>
+            <p>處事要走大路、走明路，不走偏門或暗路。在忙碌行走中，也要保持「行如風」的威儀與覺性。</p>
+            <div class="point">核心工具：覺性的即時運作</div>
+            <p>行住坐臥、動靜閒忙，覺性都要存在。忙碌導致壓力大想發脾氣時，立刻覺察並思惟「火燒功德林」的後果，隨即將怒火伏下去化掉——「應如是住，如是降伏其心」。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q19 -->
+      <div class="qa-card" data-id="19">
+        <button class="pin-btn" onclick="togglePin(this)" title="釘選複習">
+          <svg viewBox="0 0 24 24" fill="none"><ellipse class="pin-head" cx="12" cy="6" rx="5" ry="5"/><rect class="pin-body" x="11" y="10" width="2" height="9" rx="1"/><circle cx="12" cy="20" r="1.5" class="pin-body"/></svg>
+        </button>
+        <button class="qa-question" onclick="toggleCard(this)">
+          <span class="qa-num">Q 19</span>
+          如何辨識自己是在修「事」還是悟「理」？
+          <span class="qa-icon">＋</span>
+        </button>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="point">修行對象的不同</div>
+            <ul>
+              <li>修「事」：著重於外在事相與福德，禮拜佛像、研讀經律論、供養僧團，屬於累積福德的範疇。</li>
+              <li>悟「理」：著重於契悟菩提心，體認到「聽法這個心，念念分明」就是佛，不向外馳求，是在「理」上用功。</li>
+            </ul>
+            <div class="point">心境狀態的不同</div>
+            <ul>
+              <li>修「事」：積極的行動與規範，在動態生活中萬善圓彰，修一切善、斷一切惡。</li>
+              <li>悟「理」：心境處於「無所求、無所住」的狀態；靜時能一念不生，心如明鏡不染塵。</li>
+            </ul>
+            <div class="point">自我測驗</div>
+            <ul>
+              <li>你是向外求還是向內看？向外求佛是修「事」的初階；能返照自心在起心動念處降伏煩惱是悟「理」。</li>
+              <li>你是否執著於功德？做了事覺得累怨聲載道是凡夫心；廣度眾生無有疲厭且心如如不動是理上的昇華。</li>
+            </ul>
+            <p>理想的修行是「事理圓融」：靜時一念不生（理），動時萬善圓彰（事），以萬行之因花莊嚴無上佛果。</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end qa-grid -->
+  </section>
+
+</main>
+
+<footer>
+  惟覺安公老和尚開示　‧　中台山月刊第221期　‧　AQE@2026
+</footer>
+
+<script>
+  // ── 摘要卡片 ──
+  function toggleSummary(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.summary-trigger.open').forEach(b => {
+      b.classList.remove('open');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.classList.add('open');
+      body.classList.add('open');
+    }
+  }
+
+  // ── 學習單卡片 ──
+  function toggleCard(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.qa-question.open').forEach(q => {
+      q.classList.remove('open');
+      q.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.classList.add('open');
+      answer.classList.add('open');
+      setTimeout(() => btn.closest('.qa-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+    }
+  }
+
+  // ── 圖釘 ──
+  function togglePin(btn) {
+    const card = btn.closest('.qa-card');
+    card.classList.toggle('pinned');
+    updateFilterCount();
+  }
+
+  // ── 篩選 ──
+  let currentFilter = 'all';
+  function filterCards(type) {
+    currentFilter = type;
+    document.querySelectorAll('.qa-card').forEach(card => {
+      if (type === 'pinned') {
+        card.style.display = card.classList.contains('pinned') ? '' : 'none';
+      } else {
+        card.style.display = '';
+      }
+    });
+    document.getElementById('filter-all').classList.toggle('active', type === 'all');
+    document.getElementById('filter-pinned').classList.toggle('active', type === 'pinned');
+  }
+
+  function updateFilterCount() {
+    const count = document.querySelectorAll('.qa-card.pinned').length;
+    document.getElementById('filter-pinned').textContent = '📌 已釘選' + (count > 0 ? ` (${count})` : '');
+  }
+</script>
+</body>
+</html>
